@@ -46,34 +46,27 @@ class NotesController extends PluginController {
 
         }
 
-    // prikazi sve stranice
+    // Take me to all notes
     public function index() {
         $this->tasks();
     }
 
-    // dokumentacija
+    // Documentation
     public function documentation() {
-        $this->display('notes/views/documentation');
+        $this->display(NOTES_VIEWS_BASE.'/documentation');
     }
 	
-    // novi zadatak
+    // Add new note
     public function createnewnote(){
-        $this->display('notes/views/newnote'); // ovo bi trebalo samo iskocit il nesto slicno!!!
+        $this->display(NOTES_VIEWS_BASE.'/newnote');
     }
     
-    // list all notes
+    // List all notes
     public function tasks() {
         $tasks = Notes::findAllFrom('Notes');
-
-        $this->display('notes/views/tasks', array('tasks' => $tasks));
+        $this->display(NOTES_VIEWS_BASE.'/tasks', array('tasks' => $tasks));
     }
 
-   /* public function update(){
-        $notes = Notes::findAllFrom('Notes');
-        $this->display('notes/views/update', array('notes' => $notes));
-    } */
-    
-    // update
     public function update($id){
         $notes = Notes::findByIdFrom('Notes', $id);
         $this->display(NOTES_VIEWS_BASE.'/update', array('notes' => $notes));
@@ -83,15 +76,10 @@ class NotesController extends PluginController {
         $notes = Notes::findByIdFrom('Notes', $id);
         $this->display(NOTES_VIEWS_BASE.'/shownote', array('notes' => $notes));
     }
-    /*
-    public static function findByIdFrom($class_name, $id) {
-        return self::findOneFrom($class_name, 'id=?', array($id));
-    }
-*/
+
 
     /*
-     * Kreiraj novi unos
-     * @todo add kses
+     * Create new note
      */
     public function newnote(){
 
@@ -100,14 +88,9 @@ class NotesController extends PluginController {
             }
             else {
                 $data = $_POST['notes'];
-                use_helper('Kses');
-                $data['id'] = kses(trim($data['id']), array()); //$data[djelatnosti_id] mora biti isti kao name u klasi gdje je definirano polje za unos (u fileu novi_unos_tvrtke.php)
-                /*$data['djelatnosti_id'] = kses(trim($data['djelatnosti_id']), array());
-                 */
 
                 $notes = new Notes();
 
-                $notes->id = $data['id'];
                 $notes->title = $data['title'];
                 $notes->content = $data['content'];
                 $notes->created_on = date('Y-m-d'); // da vidimo hoce li raditi
@@ -121,7 +104,6 @@ class NotesController extends PluginController {
 
     /*
      * Update note
-     * @todo add kses
      */
     public function updatenote(){
 
@@ -145,28 +127,5 @@ class NotesController extends PluginController {
                 redirect(get_url('plugin/notes/tasks'));
         }
 
-    }
-
-
-	
-	
-	
-	
-	
-	
-
-    function settings() {
-        /** You can do this...
-        $tmp = Plugin::getAllSettings('skeleton');
-        $settings = array('my_setting1' => $tmp['setting1'],
-                          'setting2' => $tmp['setting2'],
-                          'a_setting3' => $tmp['setting3']
-                         );
-        $this->display('comment/views/settings', $settings);
-         *
-         * Or even this...
-         */
-
-        $this->display('notes/views/settings', Plugin::getAllSettings('notes'));
     }
 }
