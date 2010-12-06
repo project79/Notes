@@ -21,7 +21,6 @@
 
 ?>
 <div class="box">
-<h2><?php echo __('A sidebar');?></h2>
 <p class="button"><a href="<?php echo get_url('plugin/notes/createnewnote'); ?>"><img src="<?php echo URI_PUBLIC; ?>/wolf/plugins/notes/images/settings.png" align="middle" alt="page icon" /> <?php echo __('New Note'); ?></a></p>
 <p class="button"><a href="<?php echo get_url('plugin/notes/tasks'); ?>"><img src="<?php echo URI_PUBLIC; ?>/wolf/plugins/notes/images/settings.png" align="middle" alt="page icon" /> <?php echo __('View All Notes'); ?></a></p>
 <p class="button"><a href="<?php echo get_url('plugin/notes/documentation'); ?>"><img src="<?php echo URI_PUBLIC; ?>/wolf/plugins/notes/images/documentation.png" align="middle" alt="page icon" /> <?php echo __('Documentation'); ?></a></p>

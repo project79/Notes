@@ -68,17 +68,17 @@ class NotesController extends PluginController {
         $this->display('notes/views/tasks', array('tasks' => $tasks));
     }
 
-    public function update(){
+   /* public function update(){
         $notes = Notes::findAllFrom('Notes');
         $this->display('notes/views/update', array('notes' => $notes));
-    }
-    /*
+    } */
+    
     // update
     public function update($id){
         $notes = Notes::findByIdFrom('Notes', $id);
-        $this->display('notes/views/update', array('notes' => $notes));
+        $this->display(NOTES_VIEWS_BASE.'/update', array('notes' => $notes));
     }
-*/
+
     public function shownote($id){
         $notes = Notes::findByIdFrom('Notes', $id);
         $this->display(NOTES_VIEWS_BASE.'/shownote', array('notes' => $notes));
@@ -100,17 +100,14 @@ class NotesController extends PluginController {
             }
             else {
                 $data = $_POST['notes'];
-                /*use_helper('Kses');
-                $data['naziv'] = kses(trim($data['naziv']), array()); //$data[djelatnosti_id] mora biti isti kao name u klasi gdje je definirano polje za unos (u fileu novi_unos_tvrtke.php)
-                $data['djelatnosti_id'] = kses(trim($data['djelatnosti_id']), array());
-                 *
+                use_helper('Kses');
+                $data['id'] = kses(trim($data['id']), array()); //$data[djelatnosti_id] mora biti isti kao name u klasi gdje je definirano polje za unos (u fileu novi_unos_tvrtke.php)
+                /*$data['djelatnosti_id'] = kses(trim($data['djelatnosti_id']), array());
                  */
-                //insert formatted date
-                //$data['created_on'] = date('Y-m-d');
 
                 $notes = new Notes();
 
-                //$notes->id = $data['id'];
+                $notes->id = $data['id'];
                 $notes->title = $data['title'];
                 $notes->content = $data['content'];
                 $notes->created_on = date('Y-m-d'); // da vidimo hoce li raditi
@@ -134,15 +131,14 @@ class NotesController extends PluginController {
             else {
                 $data = $_POST['notes'];
                 use_helper('Kses');
-               // $data['title'] = kses(trim($data['title']), array()); //$data[djelatnosti_id] mora biti isti kao name u klasi gdje je definirano polje za unos (u fileu novi_unos_tvrtke.php)
-                $data['id'] = kses(trim($data['id']), array());
-                 
+                $data['id'] = kses(trim($data['id']), array()); 
 
                 $notes = new Notes();
 
                 $notes->id = $data['id'];
                 $notes->title = $data['title'];
                 $notes->content = $data['content'];
+                $notes->updated_on = date('Y-m-d');
                 $notes->save();
 
                 Flash::set('success', __('All went well.'));

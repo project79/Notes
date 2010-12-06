@@ -40,9 +40,9 @@ AutoLoader::addFile('Notes', CORE_ROOT.'/plugins/notes/models/Notes.php');
 
 // Setup routes
 Dispatcher::addRoute(array(
-    '/notes/shownote/:num'                     => '/plugin/notes/shownote/$1' //u frontendu na stranici djelatnosti poziva funkciju popis_djelatnosti definiranu u kontroleru
-    /*'/djelatnosti/:num'                => '/plugin/fond/view_tvrtke/$1',
-    '/djelatnosti/tvrtke/:num'         => '/plugin/fond/view_detaljno/$1',
+    '/notes/shownote/:num'  =>  '/plugin/notes/shownote/$1', //u frontendu na stranici djelatnosti poziva funkciju popis_djelatnosti definiranu u kontroleru
+    '/notes/update/:num'    =>  '/plugin/notes/update/$1'
+    /*'/djelatnosti/tvrtke/:num'         => '/plugin/fond/view_detaljno/$1',
     '/fond/djelatnosti/:num'           => '/plugin/fond/tvrtke/$1',
     '/fond/djelatnosti/tvrtke/:num'    => '/plugin/fond/update/$1',
     '/fond/djelatnosti/tvrtka/:num'    => '/plugin/fond/detaljno/$1'*/

@@ -51,4 +51,8 @@ class Notes extends Record {
     public function getNoteUrl() {
         return BASE_URL.'notes/shownote/'.$this->id;
     }
+
+    public function getUpdateUrl() {
+        return BASE_URL.'notes/update/'.$this->id;
+    }
 }
