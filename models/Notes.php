@@ -1,16 +1,27 @@
 <?php
 
-/*
- * Uf, ovdje bi trebao vrtit pizdarije iz baze
+/**
+ * Notes plugin for Wolf CMS <http://project79.net/projects/notes>
+ * Available on Github <https://github.com/project79>
+ *
+ * Simple notes for admin area.
+ *
+ * @author Dejan Andjelkovic <dejan79@gmail.com>
+ * @package Wolf
+ * @subpackage plugin.notes
+ * @version 0.0.1
+ * @licence http://www.gnu.org/licenses/gpl.html
+ * @copyright http://project79.net ,2010
+ */
+
+/* Uncomment this for usage with Wolf 0.7.0 and/or above
+ * Security measure - from Wolf 0.7.0 above
+ * if (!defined('IN_CMS')) { exit(); }
  */
  
 class Notes extends Record {
     const TABLE_NAME = 'notes';
 
-    /*
-     * polja u tablici : id, title, content, created_on, updated_on
-     * ako steka datum, onda treba definirat "public" varijablu
-     */
     public $id;
     public $title;
     public $content;
@@ -40,25 +51,4 @@ class Notes extends Record {
     public function getNoteUrl() {
         return BASE_URL.'notes/shownote/'.$this->id;
     }
-
-    /*
-    public function getDate($format=null){
-        if ($format === null){
-            return date('d.m.Y');
-        }
-        else {
-            return $this->created_on;
-        }
-    }
-
-    public function getUpdate($format=null){
-        if ($format === null){
-            return date('d.m.Y');
-        }
-        else {
-            return $this->updated_on;
-        }
-    }
- *
- */
 }
