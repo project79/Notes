@@ -1,0 +1,2 @@
+#ignore nb project dir + subdirs
+nbproject/**/*
