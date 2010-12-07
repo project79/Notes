@@ -1,0 +1,23 @@
+/**
+ * Notes plugin for Wolf CMS <http://project79.net/projects/notes>
+ * Available on Github <https://github.com/project79>
+ *
+ * Simple notes for admin area.
+ *
+ * @author Dejan Andjelkovic <dejan79@gmail.com>
+ * @package Wolf
+ * @subpackage plugin.notes
+ * @version 0.0.1
+ * @licence http://www.gnu.org/licenses/gpl.html
+ * @copyright http://project79.net ,2010
+ */
+
+root { 
+    display: block;
+}
+
+#showMeAll { margin: 20px; width: 80%; }
+
+table.fieldset td.naslov { background-color: #dfdfdf; font-weight: bold; }
+
+
