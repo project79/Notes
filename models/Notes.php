@@ -23,10 +23,6 @@ class Notes extends Record {
     const TABLE_NAME = 'notes';
 
     public $id;
-    /*public $title;
-    public $content;
-    public $created_on;
-    public $updated_on;*/
 
     public function getId() {
         return $this->id;

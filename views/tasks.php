@@ -24,10 +24,11 @@
 <h1><?php echo __('All notes'); ?></h1>
     <table class="fieldset" cellspacing="0" cellpadding="0" border="0">
         <tr>
-            <td class="naslov">Title</td>
-            <td class="naslov">Created on</td>
-            <td class="naslov">Last Updated on</td>
-            <td class="naslov">Update | Delete</td>
+            <td class="naslov"><?php echo __('Title'); ?></td>
+            <td class="naslov"><?php echo __('Created on'); ?></td>
+            <td class="naslov"><?php echo __('Last updated on'); ?></td>
+            <td class="naslov" align="right"><?php echo __('Edit'); ?></td>
+            <td class="naslov"><?php echo __('Delete'); ?></td>
         </tr>
         
         <?php foreach($tasks as $task) { ?>
@@ -36,7 +37,8 @@
             <td><a href="<?php echo $task->getNoteUrl(); ?>"><?php echo $task->getTitle(); ?></a></td>
             <td><?php echo $task->getDate(); ?></td>
             <td><?php echo $task->getUpdate(); ?></td>
-            <td><a href="<?php echo $task->getUpdateUrl(); ?>">Change</a> | <a href="<?php echo $task->getDeleteUrl(); ?>">Delete</a></td>
+            <td align="right"><a href="<?php echo $task->getUpdateUrl(); ?>"><img src="<?php echo URI_PUBLIC; ?>/wolf/plugins/notes/images/edit.gif" align="middle" alt="Edit" /></a></td>
+            <td><a href="<?php echo $task->getDeleteUrl(); ?>"><img src="<?php echo URI_PUBLIC; ?>/wolf/plugins/notes/images/trash.gif" align="middle" alt="Delete" /></a></td>
         </tr>
         <?php } ?>
     </table>
