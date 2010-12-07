@@ -23,4 +23,4 @@ $shownote = Notes::findByIdFrom('Notes', $notes->getId());
 ?>
 <h1><?php echo $notes->getTitle(); ?></h1>
 
-<p><?php echo $notes->getContent(); ?></p>
+<div id="showMeAll"><?php echo $notes->getContent(); ?></div>

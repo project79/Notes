@@ -23,10 +23,10 @@ class Notes extends Record {
     const TABLE_NAME = 'notes';
 
     public $id;
-    public $title;
+    /*public $title;
     public $content;
     public $created_on;
-    public $updated_on;
+    public $updated_on;*/
 
     public function getId() {
         return $this->id;
@@ -55,4 +55,9 @@ class Notes extends Record {
     public function getUpdateUrl() {
         return BASE_URL.'notes/update/'.$this->id;
     }
+
+    public function getDeleteUrl() {
+        return BASE_URL.'notes/'.$this->id.'/delete';
+    }
+  
 }

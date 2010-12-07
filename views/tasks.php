@@ -24,19 +24,19 @@
 <h1><?php echo __('All notes'); ?></h1>
     <table class="fieldset" cellspacing="0" cellpadding="0" border="0">
         <tr>
-            <td>Title</td>
-            <td>Created on</td>
-            <td>Last Updated on</td>
-            <td></td>
+            <td class="naslov">Title</td>
+            <td class="naslov">Created on</td>
+            <td class="naslov">Last Updated on</td>
+            <td class="naslov">Update | Delete</td>
         </tr>
         
         <?php foreach($tasks as $task) { ?>
 
         <tr>
-            <td><strong><?php echo $task->getTitle(); ?></strong></td>
+            <td><a href="<?php echo $task->getNoteUrl(); ?>"><?php echo $task->getTitle(); ?></a></td>
             <td><?php echo $task->getDate(); ?></td>
             <td><?php echo $task->getUpdate(); ?></td>
-            <td><a href="<?php echo $task->getUpdateUrl(); ?>">Change</a> | <a href="<?php echo $task->getNoteUrl(); ?>">Show</a></td>
+            <td><a href="<?php echo $task->getUpdateUrl(); ?>">Change</a> | <a href="<?php echo $task->getDeleteUrl(); ?>">Delete</a></td>
         </tr>
         <?php } ?>
     </table>

@@ -42,5 +42,6 @@ AutoLoader::addFile('Notes', CORE_ROOT.'/plugins/notes/models/Notes.php');
 // Setup routes
 Dispatcher::addRoute(array(
     '/notes/shownote/:num'  =>  '/plugin/notes/shownote/$1',
-    '/notes/update/:num'    =>  '/plugin/notes/update/$1'
+    '/notes/update/:num'    =>  '/plugin/notes/update/$1',
+    '/notes/:num/delete'    =>  '/plugin/notes/delete/$1'
 ));

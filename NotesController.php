@@ -63,10 +63,10 @@ class NotesController extends PluginController {
     
     // List all notes
     public function tasks() {
-        $tasks = Notes::findAllFrom('Notes');
+        $tasks = Notes::findAllFrom('Notes','id=id ORDER BY created_on DESC');
         $this->display(NOTES_VIEWS_BASE.'/tasks', array('tasks' => $tasks));
     }
-
+    
     public function update($id){
         $notes = Notes::findByIdFrom('Notes', $id);
         $this->display(NOTES_VIEWS_BASE.'/update', array('notes' => $notes));
@@ -77,6 +77,13 @@ class NotesController extends PluginController {
         $this->display(NOTES_VIEWS_BASE.'/shownote', array('notes' => $notes));
     }
 
+    // Delete note
+    public function delete($id) {
+        $notes = Notes::findByIdFrom('Notes', $id);
+        $notes->delete();
+
+        redirect(get_url('plugin/notes/tasks'));
+    }
 
     /*
      * Create new note

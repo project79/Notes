@@ -29,7 +29,7 @@ $shownote = Notes::findByIdFrom('Notes', $notes->getId());
         <table class="fieldset" cellspacing="0" cellpadding="0" border="0">
             <tr>
                 <td class="label"><?php echo __('Note ID'); ?></td>
-                <td class="field"><input type="text" name="notes[id]" class="textbox" value="<?php echo $notes->getId(); ?>"></td>
+                <td class="field"><input type="text" readonly="readonly" name="notes[id]" class="textbox" value="<?php echo $notes->getId(); ?>"></td>
                 <td class="help">Do not change this one!</td>
             </tr>
             <tr>
