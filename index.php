@@ -29,8 +29,8 @@ Plugin::setInfos(array(
     'author'      => 'Dejan Andjelkovic',
     'website'     => 'http://www.project79.net/',
     'update_url'  => 'http://www.project79.net/plugin-versions.xml',
-    'require_wolf_version' => '0.6.0',
-    'type' => 'both'
+    'require_wolf_version' => '0.6.0'
+    //'type' => 'both'
 ));
 
 // Show tab
