@@ -21,6 +21,48 @@
 
 ?>
 <h1><?php echo __('Documentation'); ?></h1>
+
+<h3>Welcome to Notes plugin.</h3>
+
 <p>
-<?php echo __('Display your documentation here!'); ?>
+    The sole purpose of this plugin is to take notes within WolfCMS.
+</p>
+<p>
+    I have created this because I'm toooo lazy to write notes on paper and I needed it for maintenance purposes.
+</p>
+
+<h2>Usage</h2>
+
+<p>
+    Well, it's pretty simple to use this plugin as it doesn't have to many options. All you can do for the moment is to:
+</p>
+<ul>
+    <li>create new note</li>
+    <li>edit and delete existing note</li>
+    <li>view all notes</li>
+</ul>
+<p>
+    For text styling use normal html tags.
+</p>
+
+<h2>To Do</h2>
+<p>
+    As any other plugin, this one has plenty of room for improvement. Some of them are listed below:
+</p>
+<ul>
+    <li>sorting by different criteria</li>
+    <li>textile filter input (maybe)</li>
+    <li>some sort of priority checkboxes</li>
+</ul>
+
+<h2>Issues and Wishes</h2>
+<p>
+    If you find any errors or you have idea on how to improve this plugin, visit my account on <a href="https://github.com/project79/Notes">Github</a> and post an issue.
+</p>
+
+<h2>Copyright and Licence</h2>
+<p>
+    Developement by Dejan Andjelkovic. Created and published on December 2010.<br />
+    More info regarding plugin can be found on <a href="http://project79.net">Project 79</a> site under <em>/projects</em> area.<br />
+    Licence: <a href="http://www.gnu.org/licenses/gpl.html">GPL</a>
 </p>

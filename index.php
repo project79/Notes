@@ -30,11 +30,10 @@ Plugin::setInfos(array(
     'website'     => 'http://www.project79.net/',
     'update_url'  => 'http://www.project79.net/plugin-versions.xml',
     'require_wolf_version' => '0.6.0'
-    //'type' => 'both'
 ));
 
 // Show tab
-Plugin::addController('notes', __('Notes'), 'administrator', true);
+Plugin::addController('notes', __('Notes'), true);
 
 // Load Notes model
 AutoLoader::addFile('Notes', CORE_ROOT.'/plugins/notes/models/Notes.php');

@@ -1,0 +1,16 @@
+h3. Purpose
+
+The sole purpose of this plugin is to take notes within WolfCMS. It's very easy to use. You can write note, edit or delete it, that's it.
+
+h3. Installation
+
+Like any other WolfCMS based plugin you should do the following:
+
+* download plugin into <code>../wolf/plugins/</code> directory
+* unpack it and (re)name it *notes*
+* login to your admin area
+* go to Administration->Plugins and enable it
+
+For all other info see *Documentation* under Notes tab
+
+Tested and works under version 0.6.0b
