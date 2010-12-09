@@ -43,4 +43,5 @@ class Notes extends Record {
     public function getUpdate(){
         return $this->updated_on;
     }
+  
 }

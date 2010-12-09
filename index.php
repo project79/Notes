@@ -24,7 +24,7 @@ Plugin::setInfos(array(
     'id'          => 'notes',
     'title'       => __('Notes'),
     'description' => __('Have your notes always by your side.'),
-    'version'     => '0.0.2',
+    'version'     => '0.0.1',
     'license'     => 'GPL',
     'author'      => 'Dejan Andjelkovic',
     'website'     => 'http://www.project79.net/',
@@ -37,11 +37,3 @@ Plugin::addController('notes', __('Notes'), true);
 
 // Load Notes model
 AutoLoader::addFile('Notes', CORE_ROOT.'/plugins/notes/models/Notes.php');
-
-/* Setup routes
-Dispatcher::addRoute(array(
-    '/notes/shownote/:num'  =>  '/plugin/notes/shownote/$1',
-    '/notes/update/:num'    =>  '/plugin/notes/update/$1',
-    '/notes/:num/delete'    =>  '/plugin/notes/delete/$1'
-));
- */

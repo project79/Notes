@@ -1,2 +1,4 @@
 #ignore nb project dir + subdirs
 nbproject/**/*
+project.properties
+project.xml

@@ -22,7 +22,6 @@
 
 class NotesController extends PluginController {
 
-
     private static function _checkPermission() {
         AuthUser::load();
         if ( ! AuthUser::isLoggedIn()) {
@@ -32,12 +31,12 @@ class NotesController extends PluginController {
 
     public function __construct() {
         self::_checkPermission();
-
+        
         define('NOTES_VIEWS_BASE', 'notes/views');
+
         $this->setLayout('backend');
         $this->assignToLayout('sidebar', new View('../../plugins/notes/views/sidebar'));
-
-        }
+    }
 
     // Take me to all notes
     public function index() {
@@ -56,8 +55,8 @@ class NotesController extends PluginController {
     
     // List all notes
     public function tasks() {
-        $tasks = Notes::findAllFrom('Notes','id=id ORDER BY created_on DESC');
-        $this->display(NOTES_VIEWS_BASE.'/tasks', array('tasks' => $tasks));
+        $notes = Notes::findAllFrom('Notes','id=id ORDER BY created_on DESC');
+        $this->display(NOTES_VIEWS_BASE.'/tasks', array('notes' => $notes));
     }
     
     public function update($id){
@@ -128,5 +127,4 @@ class NotesController extends PluginController {
         }
 
     }
-
 }

@@ -19,12 +19,6 @@
  * if (!defined('IN_CMS')) { exit(); }
  */
 
- if (Plugin::deleteAllSettings('notes') === false) {
-    Flash::set('error', __('Unable to delete plugin settings.'));
-    redirect(get_url('setting'));
-}
- 
- 
 $PDO = Record::getConnection();
 
 if($PDO->exec('DROP TABLE IF EXISTS '.TABLE_PREFIX.'notes') === false) {
@@ -32,5 +26,5 @@ if($PDO->exec('DROP TABLE IF EXISTS '.TABLE_PREFIX.'notes') === false) {
     redirect(get_url('setting'));
 }
 else {
-	Flash::set('success', __('You have succesfully uninstalled Notes plugin!'));
+	Flash::set('success', __('Plugin is succesfully uninstalled!'));
 }
