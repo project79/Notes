@@ -30,17 +30,17 @@ $shownote = Notes::findByIdFrom('Notes', $notes->getId());
             <tr>
                 <td class="label"><?php echo __('Note ID'); ?></td>
                 <td class="field"><input type="text" readonly="readonly" name="notes[id]" class="textbox" value="<?php echo $notes->getId(); ?>"></td>
-                <td class="help"><?php echo __('Cannot be changed.'); ?></td>
+                <td class="help"><?php echo __('Preview only.'); ?></td>
             </tr>
             <tr>
-                <td class="label"><?php echo __('Title:'); ?></td>
+                <td class="label"><?php echo __('Title'); ?></td>
                 <td class="field"><input type="text" name="notes[title]" class="textbox" value="<?php echo $notes->getTitle(); ?>"></td>
                 <td class="help"><?php echo __('Edit title.'); ?></td>
             </tr>
             <tr>
-                <td class="label"><?php echo __('Content:'); ?></td>
+                <td class="label"><?php echo __('Content'); ?></td>
                 <td class="text"><textarea rows="10" cols="20" name="notes[content]" class="textarea"><?php echo $notes->getContent(); ?></textarea></td>
-                <td class="help"><?php echo __('Update your content.'); ?></td>
+                <td class="help"><?php echo __('Edit content.'); ?></td>
             </tr>
         </table>
         </fieldset>

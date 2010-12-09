@@ -27,12 +27,12 @@
         <legend style="padding: 0em 0.5em 0em 0.5em; font-weight: bold;"><?php echo __('Create a New Task'); ?></legend>
         <table class="fieldset" cellspacing="0" cellpadding="0" border="0">
                 <tr>
-                    <td class="label"><?php echo __('Title:'); ?></td>
+                    <td class="label"><?php echo __('Title'); ?></td>
                     <td class="field"><input type="text" name="notes[title]" class="textbox" value="<?php if (isset($notes['title'])) echo $notes['title']; ?>"></td>
                     <td class="help"><?php echo __('Insert title for your note.'); ?></td>
                 </tr>
                 <tr>
-                    <td class="label"><?php echo __('Content:'); ?></td>
+                    <td class="label"><?php echo __('Content'); ?></td>
                     <td class="text"><textarea rows="10" cols="20" name="notes[content]" class="textarea" value="<?php if (isset($notes['content'])) echo $notes['content']; ?>"></textarea></td>
                     <td class="help"><?php echo __('Main content for note.'); ?></td>
                 </tr>
