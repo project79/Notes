@@ -24,7 +24,7 @@
 <div id="notes">
     <form action="<?php echo BASE_URL; ?>plugin/notes/newnote" method="post">
         <fieldset style="padding:0.5em;">
-        <legend style="padding: 0em 0.5em 0em 0.5em; font-weight: bold;"><?php echo __('Create a New Task'); ?></legend>
+        <legend style="padding: 0em 0.5em 0em 0.5em; font-weight: bold;"><?php echo __('Create New Note'); ?></legend>
         <table class="fieldset" cellspacing="0" cellpadding="0" border="0">
                 <tr>
                     <td class="label"><?php echo __('Title'); ?></td>
