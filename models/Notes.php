@@ -43,17 +43,5 @@ class Notes extends Record {
     public function getUpdate(){
         return $this->updated_on;
     }
-
-    public function getNoteUrl() {
-        return BASE_URL.'notes/shownote/'.$this->id;
-    }
-
-    public function getUpdateUrl() {
-        return BASE_URL.'notes/update/'.$this->id;
-    }
-
-    public function getDeleteUrl() {
-        return BASE_URL.'notes/'.$this->id.'/delete';
-    }
   
 }
