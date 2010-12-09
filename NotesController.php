@@ -55,8 +55,8 @@ class NotesController extends PluginController {
     
     // List all notes
     public function tasks() {
-        $tasks = Notes::findAllFrom('Notes','id=id ORDER BY created_on DESC');
-        $this->display(NOTES_VIEWS_BASE.'/tasks', array('tasks' => $tasks));
+        $notes = Notes::findAllFrom('Notes','id=id ORDER BY created_on DESC');
+        $this->display(NOTES_VIEWS_BASE.'/tasks', array('notes' => $notes));
     }
     
     public function update($id){
