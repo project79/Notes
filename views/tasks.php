@@ -31,14 +31,14 @@
             <td class="naslov"><?php echo __('Delete'); ?></td>
         </tr>
         
-        <?php foreach($tasks as $task) { ?>
+        <?php foreach($notes as $note) { ?>
 
         <tr>
-            <td><a href="<?php echo $task->getNoteUrl(); ?>"><?php echo $task->getTitle(); ?></a></td>
-            <td><?php echo $task->getDate(); ?></td>
-            <td><?php echo $task->getUpdate(); ?></td>
-            <td align="right"><a href="<?php echo $task->getUpdateUrl(); ?>"><img src="<?php echo URI_PUBLIC; ?>/wolf/plugins/notes/images/edit.gif" align="middle" alt="Edit" /></a></td>
-            <td><a href="<?php echo $task->getDeleteUrl(); ?>"><img src="<?php echo URI_PUBLIC; ?>/wolf/plugins/notes/images/trash.gif" align="middle" alt="Delete" /></a></td>
+            <td><a href="<?php echo get_url('plugin/notes/shownote/'.$note->id); ?>"><?php echo $note->getTitle(); ?></a></td>
+            <td><?php echo $note->getDate(); ?></td>
+            <td><?php echo $note->getUpdate(); ?></td>
+            <td align="right"><a href="<?php echo get_url('plugin/notes/update/'.$note->id); ?>"><img src="<?php echo URI_PUBLIC; ?>/wolf/plugins/notes/images/edit.gif" align="middle" alt="Edit" /></a></td>
+            <td><a href="<?php echo get_url('plugin/notes/delete/'.$note->id); ?>"><img src="<?php echo URI_PUBLIC; ?>/wolf/plugins/notes/images/trash.gif" align="middle" alt="Delete" /></a></td>
         </tr>
         <?php } ?>
     </table>
