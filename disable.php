@@ -19,6 +19,6 @@
  * if (!defined('IN_CMS')) { exit(); }
  */
 
-Flash::set('success', __('Plugin is disabled!'));
+Flash::set('success', __('Notes is disabled!'));
 
 exit();
