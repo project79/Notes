@@ -30,21 +30,13 @@ class NotesController extends PluginController {
     }
 
     public function __construct() {
-        if (defined('CMS_BACKEND')) {
-            define('NOTES_VIEWS_BASE', 'notes/views');
-            $this->setLayout('backend');
-        }
-        else {
-            define('NOTES_VIEWS_BASE', '../../plugins/notes/views');
-            $page = $this->findByUri(Plugin::getSetting('frontpage', 'notes'));
-            $layout_id = $this->getLayoutId($page);
-            $layout = Layout::findById($layout_id);
-            $this->setLayout($layout->name);
+        self::_checkPermission();
+        
+        define('NOTES_VIEWS_BASE', 'notes/views');
 
-        }
+        $this->setLayout('backend');
         $this->assignToLayout('sidebar', new View('../../plugins/notes/views/sidebar'));
-
-        }
+    }
 
     // Take me to all notes
     public function index() {
