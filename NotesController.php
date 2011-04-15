@@ -9,15 +9,14 @@
  * @author Dejan Andjelkovic <dejan79@gmail.com>
  * @package Wolf
  * @subpackage plugin.notes
- * @version 0.0.1
+ * @version 0.0.2
  * @licence http://www.gnu.org/licenses/gpl.html
  * @copyright http://project79.net ,2010
  */
 
-/* Uncomment this for usage with Wolf 0.7.0 and/or above
- * Security measure - from Wolf 0.7.0 above
- * if (!defined('IN_CMS')) { exit(); }
- */
+
+if (!defined('IN_CMS')) { exit(); }
+
 
 
 class NotesController extends PluginController {

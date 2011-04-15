@@ -14,10 +14,8 @@
  * @copyright http://project79.net ,2010
  */
 
-/* Uncomment this for usage with Wolf 0.7.0 and/or above
- * Security measure - from Wolf 0.7.0 above
- * if (!defined('IN_CMS')) { exit(); }
- */
+if (!defined('IN_CMS')) { exit(); }
+
 
 ?>
 <h1><?php echo __('Documentation'); ?></h1>
@@ -62,7 +60,7 @@
 
 <h2>Copyright and Licence</h2>
 <p>
-    Developement by Dejan Andjelkovic. Created and published on December 2010.<br />
+    Developement by Dejan Andjelkovic. Created and published on December 2010. Last update: April 2011<br />
     More info regarding plugin can be found on <a href="http://project79.net">Project 79</a> site under <em>/projects</em> area.<br />
     Licence: <a href="http://www.gnu.org/licenses/gpl.html">GPL</a>
 </p>

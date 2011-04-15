@@ -14,10 +14,8 @@
  * @copyright http://project79.net ,2010
  */
 
-/* Uncomment this for usage with Wolf 0.7.0 and/or above
- * Security measure - from Wolf 0.7.0 above
- * if (!defined('IN_CMS')) { exit(); }
- */
+if (!defined('IN_CMS')) { exit(); }
+
 
 $shownote = Notes::findByIdFrom('Notes', $notes->getId());
 ?>

@@ -13,4 +13,11 @@ Like any other WolfCMS based plugin you should do the following:
 
 For all other info see *Documentation* under Notes tab
 
-Tested and works under version 0.6.0b
+h3. Changelog
+
+Version 0.0.2
+- updated for Wolf 0.7.3+
+- permissions updated
+
+Version 0.0.1
+- initial release for Wolf 0.6.0
