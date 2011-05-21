@@ -22,7 +22,7 @@ Plugin::setInfos(array(
     'id'          => 'notes',
     'title'       => __('Notes'),
     'description' => __('Have your notes always by your side.'),
-    'version'     => '0.0.4',
+    'version'     => '0.0.5',
     'license'     => 'GPL',
     'author'      => 'Dejan Andjelkovic',
     'website'     => 'http://www.project79.net/',
