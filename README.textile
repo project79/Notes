@@ -15,6 +15,10 @@ For all other info see *Documentation* under Notes tab
 
 h3. Changelog
 
+Version 0.0.5
+- Added "Edit note" within note
+- Image paths corrected (thanks David)
+
 Version 0.0.4
 - added polish translation (thanks djgprv)
 
