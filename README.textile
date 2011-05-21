@@ -15,6 +15,10 @@ For all other info see *Documentation* under Notes tab
 
 h3. Changelog
 
+Version 0.0.3
+- added portugese translation (thanks daniel affonso)
+- sqlite support (thanks daniel affonso)
+
 Version 0.0.2
 - updated for Wolf 0.7.3+
 - permissions updated
