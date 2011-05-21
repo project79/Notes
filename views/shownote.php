@@ -9,7 +9,7 @@
  * @author Dejan Andjelkovic <dejan79@gmail.com>
  * @package Wolf
  * @subpackage plugin.notes
- * @version 0.0.1
+ * @version 0.0.5
  * @licence http://www.gnu.org/licenses/gpl.html
  * @copyright http://project79.net ,2010
  */
@@ -22,3 +22,5 @@ $shownote = Notes::findByIdFrom('Notes', $notes->getId());
 <h1><?php echo $notes->getTitle(); ?></h1>
 
 <div id="showMeAll"><?php echo $notes->getContent(); ?></div>
+
+<div class="border"><a href="<?php echo get_url('plugin/notes/update/'.$notes->id); ?>" title="Edit note"><?php echo __('Edit Note'); ?></a></div>
