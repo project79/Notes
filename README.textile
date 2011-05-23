@@ -15,6 +15,9 @@ For all other info see *Documentation* under Notes tab
 
 h3. Changelog
 
+Version 0.0.7
+- extra code deleted
+
 Version 0.0.6
 - dutch translation (thanks Fortron)
 - minor html fixes (thanks Fortron)
