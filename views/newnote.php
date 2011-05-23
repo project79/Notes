@@ -1,7 +1,5 @@
 <?php
 
-<?php
-
 /**
  * Notes plugin for Wolf CMS <http://project79.net/projects/notes>
  * Available on Github <https://github.com/project79>
