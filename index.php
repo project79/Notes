@@ -9,7 +9,7 @@
  * @author Dejan Andjelkovic <dejan79@gmail.com>
  * @package Wolf
  * @subpackage plugin.notes
- * @version 0.0.4
+ * @version 0.0.6
  * @licence http://www.gnu.org/licenses/gpl.html
  * @copyright http://project79.net ,2010-2011
  */
@@ -22,7 +22,7 @@ Plugin::setInfos(array(
     'id'          => 'notes',
     'title'       => __('Notes'),
     'description' => __('Have your notes always by your side.'),
-    'version'     => '0.0.5',
+    'version'     => '0.0.6',
     'license'     => 'GPL',
     'author'      => 'Dejan Andjelkovic',
     'website'     => 'http://www.project79.net/',
