@@ -9,9 +9,9 @@
  * @author Dejan Andjelkovic <dejan79@gmail.com>
  * @package Wolf
  * @subpackage plugin.notes
- * @version 0.0.2
+ * @version 0.0.8
  * @licence http://www.gnu.org/licenses/gpl.html
- * @copyright http://project79.net ,2010
+ * @copyright http://project79.net ,2010-2011
  */
 
 if (!defined('IN_CMS')) { exit(); }
@@ -22,6 +22,7 @@ if (!defined('IN_CMS')) { exit(); }
 <h1><?php echo __('All notes'); ?></h1>
     <table class="fieldset" cellspacing="0" cellpadding="0" border="0">
         <tr>
+			<td class="naslov"><?php echo __('Id'); ?></td>
             <td class="naslov"><?php echo __('Title'); ?></td>
             <td class="naslov"><?php echo __('Created on'); ?></td>
             <td class="naslov"><?php echo __('Last updated on'); ?></td>
@@ -32,6 +33,7 @@ if (!defined('IN_CMS')) { exit(); }
         <?php foreach($notes as $note) { ?>
 
         <tr>
+			<td><?php echo $note->getId(); ?></td>
             <td><a href="<?php echo get_url('plugin/notes/shownote/'.$note->id); ?>"><?php echo $note->getTitle(); ?></a></td>
             <td><?php echo $note->getDate(); ?></td>
             <td><?php echo $note->getUpdate(); ?></td>
