@@ -44,7 +44,7 @@ $shownote = Notes::findByIdFrom('Notes', $notes->getId());
         </table>
         </fieldset>
         <p class="buttons" align="right">
-            <input class="button" type="submit" name="save" value="<?php echo __('Save'); ?>" />
+            <input class="button" type="submit" name="save" value="<?php echo __('Save'); ?>" /> or <a href="<?php echo get_url('plugin/notes/tasks'); ?>"><?php echo __('Cancel'); ?></a>
         </p>
     </form>
 </div>

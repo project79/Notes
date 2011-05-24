@@ -10,7 +10,7 @@
  * @author Fortron <webmasterkubes@gmail.com>
  * @package Wolf
  * @subpackage plugin.notes
- * @version 0.0.6
+ * @version 0.0.8
  * @licence http://www.gnu.org/licenses/gpl.html
  * @copyright http://project79.net ,2010-2011
  */
@@ -39,7 +39,7 @@ if (!defined('IN_CMS')) { exit(); }
         </table>
         </fieldset>
         <p class="buttons" align="right">
-            <input class="button" type="submit" name="save" value="<?php echo __('Save'); ?>" />
+            <input class="button" type="submit" name="save" value="<?php echo __('Save'); ?>" /> or <a href="<?php echo get_url('plugin/notes/tasks'); ?>"><?php echo __('Cancel'); ?></a>
         </p>
     </form>
 </div>
