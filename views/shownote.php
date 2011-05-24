@@ -23,4 +23,4 @@ $shownote = Notes::findByIdFrom('Notes', $notes->getId());
 
 <div id="showMeAll"><?php echo $notes->getContent(); ?></div>
 
-<div class="border"><a href="<?php echo get_url('plugin/notes/update/'.$notes->id); ?>" title="Edit note"><?php echo __('Edit Note'); ?></a></div>
+<div class="border"><a href="<?php echo get_url('plugin/notes/update/'.$notes->id); ?>" title="Edit note"><?php echo __('Edit Note'); ?></a> | <a href="<?php echo get_url('plugin/notes/tasks'); ?>"><?php echo __('View All Notes'); ?></a></div>
