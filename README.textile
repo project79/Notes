@@ -1,6 +1,10 @@
 h3. Purpose
 
-The sole purpose of this plugin is to take notes within WolfCMS. It's very easy to use. You can write note, edit or delete it, that's it.
+The purpose of this plugin is to:
+
+* take notes within WolfCMS,
+* make testimonials as notes and show them on the front end,
+* pull one by one note anywhere on your site...
 
 h3. Installation
 
@@ -14,6 +18,13 @@ Like any other WolfCMS based plugin you should do the following:
 For all other info see *Documentation* under Notes tab
 
 h3. Changelog
+
+Version 0.0.8
+- two new function
+- docs updated
+- minor visual enhancements
+- cancel button
+- all translations updated
 
 Version 0.0.7
 - extra code deleted
