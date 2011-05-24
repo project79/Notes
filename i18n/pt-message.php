@@ -13,6 +13,7 @@
 return array(
     'All notes'                            => 'Todas as Notas',
     'All went well.'                       => 'Tudo foi bem',
+	'Cancel' 							   => 'Cancelar',
     'Cannot be changed.'                   => 'Nao pode ser alterado',
     'Content'                              => 'Conte&uacute;do',
     'Could not save this note!'            => 'N&atilde;o foi poss&iacute;vel salvar essa nota',

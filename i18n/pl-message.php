@@ -14,6 +14,7 @@
     return array(
     'All notes' => 'Wszystkie notatki',
     'All went well.' => 'Notatka została zapisana',
+	'Cancel' => 'Anuluj',
     'Cannot be changed.' => 'Nie można dokonać zmian',
     'Content' => 'Treść',
     'Could not save this note!' => 'Nie udało się notatki!',

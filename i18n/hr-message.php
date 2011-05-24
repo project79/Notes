@@ -7,12 +7,13 @@
      * @subpackage plugin.notes.translations
      *
      * @author Dejan Andjelkovic <dejan79@gmail.com>
-     * @version Wolf 0.6.0b
+     * @version Wolf 0.7.5
      */
 
     return array(
-    	'All notes' => 'Sve bilješke',
+	'All notes' => 'Sve bilješke',
 	'All went well.' => 'Sve je prošlo ok',
+	'Cancel' => 'Odustani',
 	'Cannot be changed.' => 'Nepromijenjivo',
 	'Content' => 'Sadržaj',
 	'Could not save this note!' => 'Nije moguće spremiti bilješku!',

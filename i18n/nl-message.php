@@ -13,6 +13,7 @@
 return array(
     'All notes'                            => 'Alle notities',
     'All went well.'                       => 'Notitie is bewaard',
+	'Cancel'                               => 'Annuleer',
     'Cannot be changed.'                   => 'Kan niet gewijzigd worden.',
     'Content'                              => 'Inhoud',
     'Could not save this note!'            => 'Kon de notitie niet bewaren!',
