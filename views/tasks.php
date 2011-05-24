@@ -35,8 +35,8 @@ if (!defined('IN_CMS')) { exit(); }
             <td><a href="<?php echo get_url('plugin/notes/shownote/'.$note->id); ?>"><?php echo $note->getTitle(); ?></a></td>
             <td><?php echo $note->getDate(); ?></td>
             <td><?php echo $note->getUpdate(); ?></td>
-            <td align="right"><a href="<?php echo get_url('plugin/notes/update/'.$note->id); ?>"><img src="<?php echo URI_PUBLIC; ?>wolf/plugins/notes/images/edit.gif" align="middle" alt="Edit" /></a></td>
-            <td><a href="<?php echo get_url('plugin/notes/delete/'.$note->id); ?>"><img src="<?php echo URI_PUBLIC; ?>wolf/plugins/notes/images/trash.gif" align="middle" alt="Delete" /></a></td>
+            <td align="right"><a href="<?php echo get_url('plugin/notes/update/'.$note->id); ?>"><img src="<?php echo URI_PUBLIC; ?>wolf/plugins/notes/images/edit.gif" align="middle" title="<?php echo __('Edit'); ?>" alt="<?php echo __('Edit'); ?>" /></a></td>
+            <td><a href="<?php echo get_url('plugin/notes/delete/'.$note->id); ?>"><img src="<?php echo URI_PUBLIC; ?>wolf/plugins/notes/images/trash.gif" align="middle" title="<?php echo __('Delete'); ?>" alt="<?php echo __('Delete'); ?>" /></a></td>
         </tr>
         <?php } ?>
     </table>
