@@ -12,14 +12,12 @@
  * @copyright http://project79.net ,2010
  */
 
-root { 
-    display: block;
-}
+/*root { display: block; }*/
 
-#showMeAll { margin: 20px; width: 80%; }
+#notes #showMeAll { margin: 20px; width: 80%; }
 
-.border { border-top: #dfdfdf solid 1px; margin: 20px; padding: 5px 0; }
+#notes .border { border-top: #dfdfdf solid 1px; margin: 20px; padding: 5px 0; }
 
-table.fieldset td.naslov { background-color: #dfdfdf; font-weight: bold; }
+#notes table.fieldset td.naslov { background-color: #dfdfdf; font-weight: bold; }
 
 

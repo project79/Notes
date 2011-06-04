@@ -20,6 +20,7 @@ if (!defined('IN_CMS')) { exit(); }
 ?>
 
 <h1><?php echo __('All notes'); ?></h1>
+<div id="notes">
     <table class="fieldset" cellspacing="0" cellpadding="0" border="0">
         <tr>
 			<td class="naslov"><?php echo __('Id'); ?></td>
@@ -42,5 +43,4 @@ if (!defined('IN_CMS')) { exit(); }
         </tr>
         <?php } ?>
     </table>
-
- 
+</div>
