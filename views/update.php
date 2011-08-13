@@ -38,7 +38,7 @@ $shownote = Notes::findByIdFrom('Notes', $notes->getId());
             </tr>
             <tr>
                 <td class="label"><label for="notes-content"><?php echo __('Content'); ?></label></td>
-                <td class="text"><textarea rows="10" cols="20" id="notes-content" name="notes[content]" class="textarea"><?php echo htmlentities($notes->getContent()); ?></textarea></td>
+                <td class="text"><textarea rows="10" cols="20" id="notes-content" name="notes[content]" class="textarea"><?php echo htmlspecialchars($notes->getContent(), ENT_COMPAT, "UTF-8"); ?></textarea></td>
                 <td class="help"><?php echo __('Edit content'); ?></td>
             </tr>
         </table>
