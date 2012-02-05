@@ -11,7 +11,7 @@
  * @subpackage plugin.notes
  * @version 0.0.2
  * @licence http://www.gnu.org/licenses/gpl.html
- * @copyright http://project79.net ,2010
+ * @copyright http://project79.net, 2010-2012
  */
 
 
