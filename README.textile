@@ -1,10 +1,6 @@
 h3. Purpose
 
-The purpose of this plugin is to:
-
-* take notes within WolfCMS,
-* make testimonials as notes and show them on the front end,
-* pull one by one note anywhere on your site...
+The sole purpose of this plugin is to take notes within WolfCMS. It's very easy to use. You can write note, edit or delete it, that's it.
 
 h3. Installation
 
@@ -19,34 +15,46 @@ For all other info see *Documentation* under Notes tab
 
 h3. Changelog
 
+Version 0.0.9
+
+* added support for in cms text filters (thanks andrewmman)
+* notice for deleted messages
+* visual changes
+* order notes changed from date to id
+* code corrections
+
 Version 0.0.8
-- two new function
-- docs updated
-- minor visual enhancements
-- cancel button
-- all translations updated
+
+* minor code tweaks
 
 Version 0.0.7
-- extra code deleted
+
+* extra code deleted
 
 Version 0.0.6
-- dutch translation (thanks Fortron)
-- minor html fixes (thanks Fortron)
+
+* dutch translation (thanks Fortron)
+* minor html fixes (thanks Fortron)
 
 Version 0.0.5
-- "Edit note" within note
-- image paths corrected (thanks David)
+
+* "Edit note" within note
+* image paths corrected (thanks David)
 
 Version 0.0.4
-- polish translation (thanks djgprv)
+
+* polish translation (thanks djgprv)
 
 Version 0.0.3
-- portugese translation (thanks daniel affonso)
-- sqlite support (thanks daniel affonso)
+
+* portugese translation (thanks daniel affonso)
+* sqlite support (thanks daniel affonso)
 
 Version 0.0.2
-- updated for Wolf 0.7.3+
-- permissions updated
+
+* updated for Wolf 0.7.3+
+* permissions updated
 
 Version 0.0.1
-- initial release for Wolf 0.6.0
+
+* initial release for Wolf 0.6.0
