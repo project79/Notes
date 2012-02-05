@@ -7,17 +7,14 @@
  * @author Dejan Andjelkovic <dejan79@gmail.com>
  * @package Wolf
  * @subpackage plugin.notes
- * @version 0.0.1
+ * @version 0.0.9
  * @licence http://www.gnu.org/licenses/gpl.html
- * @copyright http://project79.net ,2010
+ * @copyright http://project79.net, 2010-2012
  */
 
-/*root { display: block; }*/
 
 #notes #showMeAll { margin: 20px; width: 80%; }
-
-#notes .border { border-top: #dfdfdf solid 1px; margin: 20px; padding: 5px 0; }
-
-#notes table.fieldset td.naslov { background-color: #dfdfdf; font-weight: bold; }
+table.index thead { background-color: #f5f5f5; border-top: none; }
+table.fieldset .even:hover { background-color: #ccc; }
 
 
