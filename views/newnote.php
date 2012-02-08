@@ -39,7 +39,7 @@ if (!defined('IN_CMS')) { exit(); }
                         <option value="<?php echo $filter; ?>"<?php if(isset($notes->filter_id) == $filter) echo ' selected="selected"'; ?>><?php echo Inflector::humanize($filter); ?></option>
                             <?php endforeach; ?>
                         </select>
-                    <textarea id="notes_content" name="notes[content]" class="textarea<?php if(isset($notes->filter_id) != "") echo ' '.$notes->filter_id; ?>" rows="20" cols="40"><?php if(isset($notes->content) != '') echo htmlentities($notes->content, ENT_COMPAT, 'UTF-8'); ?></textarea>
+                    <textarea id="notes-content" name="notes[content]" class="textarea<?php if(isset($notes->filter_id) != "") echo ' '.$notes->filter_id; ?>" rows="20" cols="40"><?php if(isset($notes->content) != '') echo htmlentities($notes->content, ENT_COMPAT, 'UTF-8'); ?></textarea>
                     </td>
                 </tr>
         </table>
