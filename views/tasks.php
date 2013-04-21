@@ -3,7 +3,7 @@
 /**
  * Notes plugin for Wolf CMS <http://project79.net/projects/notes>
  * Available on Github <https://github.com/project79>
- * 
+ *
  * Simple notes for admin area.
  *
  * @author Dejan Andjelkovic <dejan79@gmail.com>
@@ -31,7 +31,7 @@ if (!defined('IN_CMS')) { exit(); }
                 <td><?php echo __('Delete'); ?></td>
             </tr>
         </thead>
-        
+
         <?php foreach($notes as $note) { ?>
 
         <tr class="<?php echo odd_even(); ?>">
@@ -39,10 +39,10 @@ if (!defined('IN_CMS')) { exit(); }
             <td><a href="<?php echo get_url('plugin/notes/shownote/'.$note->id); ?>"><?php echo $note->getTitle(); ?></a></td>
             <td><?php echo $note->getDate(); ?></td>
             <td><?php echo $note->getUpdate(); ?></td>
-            <td align="right"><a href="<?php echo get_url('plugin/notes/update/'.$note->id); ?>"><img src="<?php echo URI_PUBLIC; ?>wolf/icons/rename-16.png" alt="Edit" /></a></td>
-            <td><a href="<?php echo get_url('plugin/notes/delete/'.$note->id); ?>"><img src="<?php echo URI_PUBLIC; ?>wolf/icons/delete-16.png" alt="Delete" /></a></td>
+            <td align="right"><a href="<?php echo get_url('plugin/notes/update/'.$note->id); ?>"><img src="<?php echo PLUGINS_URI; ?>/notes/images/edit.gif" alt="Edit" /></a></td>
+            <td><a href="<?php echo get_url('plugin/notes/delete/'.$note->id); ?>"><img src="<?php echo PLUGINS_URI; ?>/notes/images/trash.gif" alt="Delete" /></a></td>
         </tr>
         <?php } ?>
     </table>
 
- 
+
