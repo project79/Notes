@@ -31,6 +31,7 @@ return array(
     'Last updated on'                      => 'Last updated on',
     'Main content for note.'               => 'Main content for note.',
     'New Note'                             => 'New Note',
+    'Id'                                   => 'ID',
     'Note ID'                              => 'Note ID',
     'Notes'                                => 'Notes',
     'Notes is disabled!'                   => 'Notes is disabled!',
