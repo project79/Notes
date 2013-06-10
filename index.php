@@ -22,10 +22,10 @@ Plugin::setInfos(array(
     'id'          => 'notes',
     'title'       => __('Notes'),
     'description' => __('Have your notes always by your side.'),
-    'version'     => '0.0.9',
+    'version'     => '0.1.0',
     'license'     => 'GPL',
     'author'      => 'Dejan Andjelkovic',
-    'website'     => 'http://www.project79.net/',
+    'website'     => 'http://www.project79.net/projects/notes',
     'update_url'  => 'http://www.project79.net/plugin-versions.xml',
     'require_wolf_version' => '0.7.3'
 ));
