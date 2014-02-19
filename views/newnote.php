@@ -31,7 +31,7 @@ if (!defined('IN_CMS')) { exit(); }
                     <td class="field"><input type="text" id="notes-title" name="notes[title]" class="textbox" value="<?php if (isset($notes['title'])) echo $notes['title']; ?>" /></td>
                 </tr>
                 <tr>
-                    <td class="label"><label for="notes-content"><?php echo __('Content'); ?></label></td>
+                    <td class="label"><label for="notes_content"><?php echo __('Content'); ?></label></td>
                     <td class="text">
                         <select id="notes_filter_id" class="filter-selector" name="notes[filter_id]">
                         <option value=""<?php if(isset($notes->filter_id) == '') echo ' selected="selected"'; ?>>&#8212; <?php echo __('none'); ?> &#8212;</option>
@@ -39,7 +39,7 @@ if (!defined('IN_CMS')) { exit(); }
                         <option value="<?php echo $filter; ?>"<?php if(isset($notes->filter_id) == $filter) echo ' selected="selected"'; ?>><?php echo Inflector::humanize($filter); ?></option>
                             <?php endforeach; ?>
                         </select>
-                    <textarea id="notes-content" name="notes[content]" class="textarea<?php if(isset($notes->filter_id) != "") echo ' '.$notes->filter_id; ?>" rows="20" cols="40"><?php if(isset($notes->content) != '') echo htmlentities($notes->content, ENT_COMPAT, 'UTF-8'); ?></textarea>
+                    <textarea id="notes_content" name="notes[content]" class="textarea<?php if(isset($notes->filter_id) != "") echo ' '.$notes->filter_id; ?>" rows="20" cols="40"><?php if(isset($notes->content) != '') echo htmlentities($notes->content, ENT_COMPAT, 'UTF-8'); ?></textarea>
                     </td>
                 </tr>
         </table>
